@@ -1,0 +1,122 @@
+div.ui.banner.grid {
+	height: 100vh;
+	z-index: -1;
+	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/abstract.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+
+div.ui.container {
+	h1.header {
+		font-size: 5.5rem;
+		text-align: left;
+		margin-right: 40%;
+		margin-left: -15%;
+		margin-top: 8rem;
+		color: #fafafa;
+		text-shadow:
+	   -1px -1px 0 #fafafa,
+	    1px -1px 0 #fafafa,
+	    -1px 1px 0 #fafafa,
+	     1px 1px 0 #fafafa;
+	  span {
+	  	color: #2f92a3;
+	  	text-shadow:
+		   -1px -1px 0 #2f92a3,  
+		    1px -1px 0 #2f92a3,
+		    -1px 1px 0 #2f92a3,
+		     1px 1px 0 #2f92a3;
+	  }
+	}
+	p {
+		font-size: 1.5rem;
+		color: #fafafa;
+		font-family: georgia;
+		margin-right: 50%;
+		margin-left: -15%;
+		margin-top: 2rem;
+		font-weight: 300;
+		text-align: justify;
+	}
+}
+
+
+div.seven.column.row {
+	height: 60rem;
+	margin: 0;
+	padding: 0;
+	
+	.column {
+		margin: 0;
+		&.seven {
+			background: #fafafa;
+			z-index: 1;
+			padding-top: 15rem;
+			h4 {
+				font-size: 1.5rem;
+				font-weight: 600;
+				text-align: right;
+				color: #000000;
+				margin-top: 10%;
+				text-shadow:
+			   -0.5px -0.5px 0 #000000,
+			    0.5px -0.5px 0 #000000,
+			    -0.5px 0.5px 0 #000000,
+			     0.5px 0.5px 0 #000000;
+			  &.right-side {
+			  	text-align: left;
+			  }
+			}
+			h2 {
+				display: inline-block;
+				text-align: right;
+				margin-left: 30%;
+				line-height: 6rem;
+				font-size: 4rem;
+				margin-right: -4rem;
+				padding: 1rem;
+				background-color: #de4f4f;
+				text-shadow:
+			   -1px -1px 0 #000000,
+			    1px -1px 0 #000000,
+			    -1px 1px 0 #000000,
+			     1px 1px 0 #000000;
+				&.right-side {
+					text-align: left;
+					margin-right: 30%;
+					margin-left: -4rem;
+					background-color: #2f92a3;
+				}
+			}
+		}
+		&.nine.image {
+			background: url('http://www.lorempixel.com/900/900/nature/1');
+			background-size: cover;
+			z-index: 0;
+			-webkit-filter: grayscale(100%);
+			        filter: grayscale(100%);
+			transition: all 1s;
+			&:hover {
+				-webkit-filter: grayscale(0);
+				        filter: grayscale(0);
+			}
+		}
+	}
+}
+
+div.four.column.row {
+	height: 20rem;
+	padding: 0;
+	.column {
+		background-color: #1c1c1c;
+		color: #fafafa;
+		text-align: center;
+		padding-top: 7rem;
+		&:hover {
+			background-color: #111;
+		}
+		h2 {
+			font-size: 4rem;
+		}
+	}
+}
