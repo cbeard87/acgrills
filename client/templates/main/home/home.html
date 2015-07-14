@@ -1,0 +1,34 @@
+<template name="home">
+  <div class="ui banner grid">
+      <div class="ui container">
+        <h1 class="header">My name is Anthony. I'm a <span>Husband &amp; Father, Pastor, Speaker,</span> and <span>Prolific Coffee Drinker.</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem, minima voluptatum soluta, illum, ipsa repellat tempore quis autem dolor similique molestiae perferendis magnam ratione! Veniam laudantium mollitia, at aliquam cumque nostrum quibusdam sint minus laborum repudiandae ullam illum illo.</p>
+      </div>
+  </div>
+  
+  <div class="ui category grid">
+    {{#each posts}}
+  	<div class="seven column stackable row">
+  		<div class="title seven wide column">
+  			<h4>FROM THE BLOG</h4>
+  			<h2>{{title}}</h2>
+  		</div>
+  		<div id="blog" class="image nine wide column"></div>
+  	</div>
+    {{/each}}
+  	<div class="seven column stackable row">
+  		<div id="podcast" class="image nine wide column"></div>
+  		<div id="order" class="title seven wide column">
+  			<h4 class="right-side">FROM THE PODCAST</h4>
+  			<h2 class="right-side">MAKING AN IMPACT FOR CHRIST</h2>
+  		</div>
+  	</div>
+    <div class="seven column stackable row">
+      <div class="title seven wide column">
+        <h4>FROM MAIN STREET</h4>
+        <h2>FEATURE CURRENT SERMON SERIES?</h2>
+      </div>
+      <div id="church" class="image nine wide column"></div>
+    </div>
+  </div>
+</template>

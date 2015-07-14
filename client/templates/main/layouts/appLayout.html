@@ -1,0 +1,24 @@
+<template name="appLayout">
+  <!--[if lt IE 9]>
+    <p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
+  <![endif]-->
+
+  <div class="ui right vertical sidebar menu">
+  	<a href="{{pathFor 'home'}}" class="item"><i class="home icon"></i> Home</a>
+    <a href="{{pathFor 'about'}}" class="item"><i class="book icon"></i> About</a>
+  	<a href="{{pathFor 'blog'}}" class="item"><i class="write icon"></i> Blog</a>
+    <a href="{{pathFor 'podcast'}}" class="item"><i class="sound icon"></i> Podcast</a>
+  	<a href="{{pathFor 'store'}}" class="item"><i class="shop icon"></i> Store</a>
+  	<a href="{{pathFor 'connect'}}" class="item"><i class="at icon"></i> Connect</a>
+  </div>
+
+	<div class="pusher">
+  {{> _header}}
+
+  
+    {{> yield}}
+ 
+
+  {{> _footer}}
+  </div>
+</template>

@@ -2,7 +2,7 @@ if(Meteor.isClient) {
   Meta.config({
       options: {
         // Meteor.settings[Meteor.settings.environment].public.meta.title
-        title: 'Main Street United Methodist Church',
+        title: 'Anthony Grills | Pastor of Main Street UMC',
         suffix: 'Project Title'
       }
   });

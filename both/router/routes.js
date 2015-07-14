@@ -41,12 +41,6 @@ Router.route('/about', {
     name: 'about'
 });
 
-Router.route('/new-post', {
-    name: 'newPost'
-});
-
-
-
 Router.plugin('ensureSignedIn', {
-   only: ['changePwd', 'newPost']
+   only: ['changePwd']
  });

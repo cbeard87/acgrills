@@ -1,0 +1,90 @@
+@import "mixins";
+
+div.ui.single-blog.grid {
+  div.row {
+    margin: 0;
+    padding: 0;
+    div.column {
+      height: 100vh;
+      margin: 0;
+      &.seven.wide.blog-title {
+        text-align: right;
+        background-color: #fafafa;
+        color: #000000;
+        z-index: 1;
+        padding-top: 5%;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('http://www.lorempixel.com/900/1080/nature/2') no-repeat;
+        background-size: cover;
+        @media screen and (max-width: 481px) {
+          -webkit-order: -1;
+          order: -1;
+          height: 50vh;
+        }
+        h4 {
+          font-size: 1.5rem;
+          color: #fafafa;
+          margin-right: 1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          @include mobile-align(center);
+          @media screen and (max-width: 481px) {
+            //margin-top: -4rem;
+            font-size: 1.5rem;
+            color: #fafafa;
+          }
+          span {
+            color: #de4f4f;
+          }
+        }
+        h2 {
+          display: inline-block;
+          margin-left: 30%;
+          margin-right: -4rem;
+          font-size: 3rem;
+          color: #fafafa;
+          @include mobile-align(center);
+          @include text-shadow(#fafafa);
+          background-color: #de4f4f;
+          padding: 1rem;
+          text-transform: uppercase;
+          @media screen and (max-width: 481px) {
+            font-size: 2rem;
+          }
+        }
+      }
+      &.nine.wide.blog-content {
+        padding: 2rem 4rem 2rem 4rem;
+        font-size: 1.5rem;
+        background: #fafafa;
+        overflow-y: auto;
+        @media screen and (max-width: 481px) {
+          height: auto;
+          font-size: 1.25rem;
+          font-family: georgia;
+        }
+        p {
+          margin-bottom: 2rem;
+          @include mobile-align(left);
+        }
+        div.share-buttons {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: center;
+          justify-content: center;
+          @media screen and (max-width: 481px) {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: center;
+            justify-content: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
+          a:hover {
+            background: #1c1c1c;
+            color: #fafafa;
+          }
+        }
+      }
+    }
+  }
+}
