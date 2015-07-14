@@ -4,12 +4,21 @@
   <![endif]-->
 
   <div class="ui right vertical sidebar menu">
-  	<a href="#" class="item">Home</a>
-  	<a href="#" class="item">Blog</a>
-  	<a href="#" class="item">Store</a>
-  	<a href="#" class="item">About</a>
-  	<a href="#" class="item">Contact</a>
+  	<a href="{{pathFor 'home'}}" class="item"><i class="home icon"></i> Home</a>
+    <a href="{{pathFor 'about'}}" class="item"><i class="book icon"></i> About</a>
+  	<a href="{{pathFor 'blog'}}" class="item"><i class="write icon"></i> Blog</a>
+    <a href="{{pathFor 'podcast'}}" class="item"><i class="sound icon"></i> Podcast</a>
+  	<a href="{{pathFor 'store'}}" class="item"><i class="shop icon"></i> Store</a>
+  	<a href="{{pathFor 'connect'}}" class="item"><i class="at icon"></i> Connect</a>
   </div>
+
+  {{#if currentUser}}
+  <div class="ui left vertical sidebar menu">
+      <a href="{{pathFor 'newPost'}}" class="item">New Blog Post</a>
+      <a href="/change-password" class="item">Change Password</a>
+      <a data-action="logout" class="item">Logout</a>
+  </div>
+  {{/if}}
 
 	<div class="pusher">
   {{> _header}}

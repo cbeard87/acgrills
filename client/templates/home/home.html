@@ -7,40 +7,28 @@
   </div>
   
   <div class="ui category grid">
-  	<div class="seven column row">
+    {{#each posts}}
+  	<div class="seven column stackable row">
   		<div class="title seven wide column">
   			<h4>FROM THE BLOG</h4>
-  			<h2>MOST RECENT BLOG TITLE GOES HERE</h2>
+  			<h2>{{title}}</h2>
   		</div>
-  		<div class="image nine wide column"></div>
+  		<div id="blog" class="image nine wide column"></div>
   	</div>
-  	<div class="seven column row">
-  		<div class="image nine wide column"></div>
-  		<div class="title seven wide column">
+    {{/each}}
+  	<div class="seven column stackable row">
+  		<div id="podcast" class="image nine wide column"></div>
+  		<div id="order" class="title seven wide column">
   			<h4 class="right-side">FROM THE PODCAST</h4>
   			<h2 class="right-side">MAKING AN IMPACT FOR CHRIST</h2>
   		</div>
   	</div>
-    <div class="seven column row">
+    <div class="seven column stackable row">
       <div class="title seven wide column">
         <h4>FROM MAIN STREET</h4>
         <h2>FEATURE CURRENT SERMON SERIES?</h2>
       </div>
-      <div class="image nine wide column"></div>
-    </div>
-    <div class="four column row">
-      <div class="four wide column">
-        <h2>Blog</h2>
-      </div>
-      <div class="four wide column">
-        <h2>Podcast</h2>
-      </div>
-      <div class="four wide column">
-        <h2>Store</h2>
-      </div>
-      <div class="four wide column">
-        <h2>Connect</h2>
-      </div>
+      <div id="church" class="image nine wide column"></div>
     </div>
   </div>
 </template>

@@ -26,6 +26,7 @@ fabienb4:autoform-semantic-ui@0.4.1
 fastclick@1.0.3
 fourseven:scss@3.1.1
 geojson-utils@1.0.3
+gildaspk:autoform-medium@0.0.5
 handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
@@ -39,6 +40,7 @@ iron:location@1.0.9
 iron:middleware-stack@1.0.9
 iron:router@1.0.9
 iron:url@1.0.9
+joshowens:shareit@0.3.1
 jquery@1.11.3_2
 json@1.0.3
 launch-screen@1.0.2
@@ -47,6 +49,7 @@ livedata@1.0.13
 localstorage@1.0.3
 logging@1.0.7
 matb33:collection-hooks@0.7.13
+mediumeditor:mediumeditor@5.2.0
 meteor@1.1.6
 meteor-platform@1.2.2
 minifiers@1.1.5
@@ -72,6 +75,7 @@ sha@1.0.3
 softwarerero:accounts-t9n@1.0.9
 spacebars@1.0.6
 spacebars-compiler@1.0.6
+spiderable@1.0.7
 srp@1.0.3
 templating@1.1.1
 tracker@1.0.7

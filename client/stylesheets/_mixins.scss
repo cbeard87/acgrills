@@ -1,0 +1,28 @@
+@mixin mobile-align($align) {
+  @media screen and (max-width: 481px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: $align;
+  }
+}
+
+@mixin mobile-line($size) {
+  @media screen and (max-width: 321px) {
+    line-height: $size;
+    font-size: $size;
+  }
+}
+
+@mixin mobile-vertical($margin) {
+  @media screen and (max-width: 481px) {
+    margin-top: $margin;
+  }
+}
+
+@mixin text-shadow($color) {
+  text-shadow:
+    -1px -1px 0 $color,
+    1px -1px 0 $color,
+    -1px 1px 0 $color,
+    1px 1px 0 $color;
+}
